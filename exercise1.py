@@ -8,6 +8,8 @@ for character in s:
     else character=="" 
     my_list.append(0)
 
+   
+
 
 # TODO: Iterate over the characters of s.
 # For each '#' character, append 1 to my_list.
