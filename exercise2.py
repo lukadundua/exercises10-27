@@ -23,6 +23,10 @@ t = turtle.Turtle()
 t.speed(10)
 t.hideturtle()
 
+for j in range(len(my_list)):
+    if my_list[j]== 1:
+        draw_square(0,j, t, side=10, col="black")
+
 # TODO: Use a for loop to iterate over the indices
 # of my_list.
 # If the element at index j is 1, call draw_square()

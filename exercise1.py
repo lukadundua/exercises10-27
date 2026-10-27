@@ -4,11 +4,11 @@ my_list = []
 
 for character in s:
     if character == "#":
-    my_list.append(1)
-    else character=="" 
-    my_list.append(0)
+    	my_list.append(1)
+    elif character==" ":
+    	my_list.append(0)
 
-   
+
 
 
 # TODO: Iterate over the characters of s.

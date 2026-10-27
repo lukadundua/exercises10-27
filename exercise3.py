@@ -23,7 +23,11 @@ line = file.readline()
 file.close()
 
 my_list = []
-
+for c in line:
+    if c == "#":
+        my_list.append(1)
+    elif c ==" ":
+        my_list.append(0)
 # TODO: Iterate over the characters in line.
 # Append 1 for each '#' and 0 for each space.
 # Ignore any newline character.
@@ -34,6 +38,9 @@ print(my_list)
 t = turtle.Turtle()
 t.speed(10)
 t.hideturtle()
+for j in range(len(my_list)):
+    if my_list[j]== 1:
+        draw_square(0,j, t, side=10, col="black")
 
 # TODO: Iterate over the indices of my_list.
 # Draw a black square at row 0, column j
